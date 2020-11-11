@@ -1,1 +1,0 @@
-Constructors never return null.
