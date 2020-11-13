@@ -73,7 +73,7 @@ public class MyCustomCheck extends BugChecker implements NewClassTreeMatcher {
         if (PRINT_METHOD.matches(tree, state)) {
             String pattern = tree.getArguments().toString();
             System.out.println("PATTERN: " + pattern);
-            if (pattern.contains("YYYY") && !pattern.contains("w")) {
+            if (pattern.contains("yyyy") && pattern.contains("w")) {
                 return describeMatch(tree);
             } else {
                 return NO_MATCH;
